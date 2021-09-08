@@ -11,11 +11,7 @@ const Home = () => {
   return (
     <>
       {state.results[0] ? (
-        <HeroImage
-          image={`${state.results[0].thumbnail.path}.${state.results[0].thumbnail.extension}`}
-          name={state.results[0].name}
-          text={`${state.results[0].thumbnail.path}.${state.results[0].thumbnail.extension}`}
-        />
+        <HeroImage />
       ) : null}
     </>
   );
